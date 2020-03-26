@@ -23,6 +23,6 @@
     "opn": "^6.0.0"
   },
   "dependencies": {
-    "blockstack": "^19.3.0"
+    "blockstack": "^21.0.0"
   }
 }
