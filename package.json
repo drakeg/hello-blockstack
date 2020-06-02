@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "browserify": "browserify requires.js -o public/bundle.js",
-    "start": "npm run browserify; node server.js"
+    "start": "npm run browserify; node server.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,8 @@
     "opn": "^6.0.0"
   },
   "dependencies": {
-    "blockstack": "^21.0.0"
-  }
+    "blockstack": "^21.0.0",
+    "snyk": "^1.334.0"
+  },
+  "snyk": true
 }
